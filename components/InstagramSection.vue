@@ -23,11 +23,11 @@
         query_hash: 'e769aa130647d2354c40ea6a439bfc08',
         variables: {
           id: 8738828221,
-          first: 9,
-          after: this.after
+          first: 9
         }
       }
       const res = await this.$axios.$get('https://www.instagram.com/graphql/query/', { params })
+      console.log(res)
       const response = res.data.user.edge_owner_to_timeline_media
       this.posts.push(...response.edges)
     },
