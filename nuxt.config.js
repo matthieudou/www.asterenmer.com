@@ -29,12 +29,14 @@ export default {
   ** Global CSS
   */
   css: [
+    '~/assets/css/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    '~/plugins/mq'
   ],
   /*
   ** Auto import components
@@ -74,5 +76,18 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+    extend: (config) => {
+      const svgRule = config.module.rules.find(rule => rule.test.test('.svg'))
+
+      svgRule.test = /\.(png|jpe?g|gif|webp)$/
+
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: [
+          'babel-loader',
+          'vue-svg-loader'
+        ]
+      })
+    }
   }
 }
