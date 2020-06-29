@@ -6,7 +6,7 @@
     <main>
       <about-section />
       <client-only>
-        <instagram-section />
+        <instagram-section :posts="posts" />
       </client-only>
       <contact-section />
     </main>
@@ -15,7 +15,24 @@
 
 <script>
   export default {
+    async fetch () {
+      const params = {
+        query_hash: 'e769aa130647d2354c40ea6a439bfc08',
+        variables: {
+          id: 8738828221,
+          first: 9
+        }
+      }
+      const res = await this.$axios.$get('https://www.instagram.com/graphql/query/', { params })
+      const response = res.data.user.edge_owner_to_timeline_media
+      this.posts.push(...response.edges)
+    },
 
+    data () {
+      return {
+        posts: []
+      }
+    }
   }
 </script>
 
