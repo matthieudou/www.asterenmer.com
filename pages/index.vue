@@ -25,8 +25,6 @@
       }
       const res = await this.$axios.$get('https://www.instagram.com/graphql/query/', { params })
       const response = res.data.user.edge_owner_to_timeline_media
-      console.log(res)
-      console.log(response.edges)
       this.posts.push(...response.edges)
     },
 

@@ -26,18 +26,18 @@
       </div>
       <div class="p-8 flex justify-end items-center">
         <a
-          href="https://www.instagram.com/aster.en.mer/?hl=en"
+          href="https://vimeo.com/asterenmer"
           target="_blank"
           rel="noopener"
           class="text-white rounded-full hover:bg-blue-royal hover:bg-opacity-50 transition-color duration-150 ease-in-out w-12 h-12 flex items-center justify-center">
-          <facebook-icon />
+          <vimeo-icon class="fill-current w-6 h-6" />
         </a>
         <a
           href="https://www.instagram.com/aster.en.mer/?hl=en"
           target="_blank"
           rel="noopener"
-          class="text-white rounded-full hover:bg-blue-royal hover:bg-opacity-50 transition-color duration-150 ease-in-out w-12 h-12 flex items-center justify-center">
-          <instagram-icon />
+          class="ml-4 text-white rounded-full hover:bg-blue-royal hover:bg-opacity-50 transition-color duration-150 ease-in-out w-12 h-12 flex items-center justify-center">
+          <instagram-icon class="stroke-current w-6 h-6" />
         </a>
       </div>
     </div>
@@ -45,12 +45,12 @@
 </template>
 
 <script>
-  import FacebookIcon from '~/assets/img/svg/facebook.svg'
+  import VimeoIcon from '~/assets/img/svg/vimeo.svg'
   import InstagramIcon from '~/assets/img/svg/instagram.svg'
 
   export default {
     components: {
-      FacebookIcon,
+      VimeoIcon,
       InstagramIcon
     }
   }

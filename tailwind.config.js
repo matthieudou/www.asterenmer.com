@@ -16,17 +16,24 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: [
-          'Inter var',
+        heading: [
+          'goudyOldStyle',
           ...defaultTheme.fontFamily.sans
         ]
       },
       padding: {
         full: '100%'
+      },
+      letterSpacing: {
+        heading: '0.4em'
       }
     }
   },
-  variants: {},
+  variants: {
+    backgroundOpacity: ['responsive', 'hover', 'focus', 'group-hover'],
+    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
+    translate: ['responsive', 'hover', 'focus', 'group-hover']
+  },
   plugins: [],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
