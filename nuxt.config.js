@@ -15,14 +15,15 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Aster en mer',
+    htmlAttrs: { lang: 'fr' },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Aster en mer est un projet de passion mêlant la voile, le partage, les images et la vie.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' }
     ]
   },
   /*
@@ -59,7 +60,8 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     // Doc: https://github.com/nuxt/content
-    '@nuxt/content'
+    '@nuxt/content',
+    'vue-scrollto/nuxt'
   ],
   /*
   ** Axios module configuration

@@ -4,5 +4,6 @@ html {
 
 @font-face {
   font-family: "goudyOldStyle";
-  src: url('/fonts/goudy-old-style-regular.ttf')
+  src: url('/fonts/goudy-old-style-regular.ttf');
+  font-display: swap;
 }

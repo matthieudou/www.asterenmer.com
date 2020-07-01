@@ -1,5 +1,6 @@
 <template>
   <div
+    id="a-propos"
     class="bg-cover bg-position"
     :style="{backgroundImage: `url(${require('~/assets/img/background.jpg')})`}">
     <div class="bg-blue-royal bg-opacity-50">
@@ -31,14 +32,16 @@
           href="https://vimeo.com/asterenmer"
           target="_blank"
           rel="noopener"
-          class="text-white rounded-full hover:bg-blue-royal hover:bg-opacity-50 transition-color duration-150 ease-in-out w-12 h-12 flex items-center justify-center">
+          class="text-white rounded-full hover:bg-blue-royal hover:bg-opacity-50 transition-color duration-150 ease-in-out w-12 h-12 flex items-center justify-center focus:bg-blue-royal focus:bg-opacity-50 focus:outline-none">
+          <span class="sr-only">Vimeo</span>
           <vimeo-icon class="fill-current w-6 h-6" />
         </a>
         <a
           href="https://www.instagram.com/aster.en.mer/?hl=en"
           target="_blank"
           rel="noopener"
-          class="ml-4 text-white rounded-full hover:bg-blue-royal hover:bg-opacity-50 transition-color duration-150 ease-in-out w-12 h-12 flex items-center justify-center">
+          class="ml-4 text-white rounded-full hover:bg-blue-royal hover:bg-opacity-50 transition-color duration-150 ease-in-out w-12 h-12 flex items-center justify-center focus:bg-blue-royal focus:bg-opacity-50 focus:outline-none">
+          <span class="sr-only">Instagram</span>
           <instagram-icon class="stroke-current w-6 h-6" />
         </a>
       </div>
