@@ -63,7 +63,11 @@ export default {
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-171488293-1',
+      dev: false
+    }]
   ],
   /*
   ** Nuxt.js modules
@@ -71,8 +75,6 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    // Doc: https://github.com/nuxt/content
-    '@nuxt/content',
     'vue-scrollto/nuxt'
   ],
   /*

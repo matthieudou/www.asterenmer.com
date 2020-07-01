@@ -48,7 +48,7 @@
           rel="noopener"
           class="w-32 flex-shrink-0 flex flex-col items-center p-4 transform hover:-translate-y-2 transition-transform ease-in-out duration-300 focus:outline-none focus:bg-white focus:bg-opacity-25 rounded">
           <v-lazy-image
-            class="w-20 h-20 rounded-full object-cover border-2 border-white"
+            class="w-20 h-20 rounded-full object-cover border-2 border-white bg-white"
             v-bind="member.image" />
           <div class="mt-4 text-sm font-medium uppercase tracking-widest font-heading whitespace-no-wrap">
             {{ member.name }}
