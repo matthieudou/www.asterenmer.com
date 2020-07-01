@@ -5,29 +5,29 @@
         Contact
       </h2>
 
-      <h2 class="font-heading tracking-heading uppercase text-4xl text-center">
+      <h2 class="font-heading tracking-heading uppercase text-xl text-center">
         Crew members
       </h2>
 
-      <div class="my-8 flex flex-wrap items-center justify-center">
+      <div class="mt-4 mb-8 mx-auto flex items-center justify-center flex-wrap">
         <a
           v-for="member in members"
           :key="member.name"
           :href="member.href"
           target="_blank"
           rel="noopener"
-          class="m-4 flex flex-col items-center transform hover:-translate-y-2 transition-transform ease-in-out duration-300">
+          class="w-24 flex-shrink-0 flex flex-col items-center m-4 transform hover:-translate-y-2 transition-transform ease-in-out duration-300">
           <v-lazy-image
             class="w-20 h-20 rounded-full object-cover border-2 border-white"
             v-bind="member.image" />
-          <div class="mt-4 text-sm font-medium uppercase tracking-widest font-heading">
+          <div class="mt-4 text-sm font-medium uppercase tracking-widest font-heading whitespace-no-wrap">
             {{ member.name }}
           </div>
         </a>
       </div>
 
       <div class="p-4 border-t border-white text-sm flex justify-between items-center">
-        copyright 2k20
+        Aster en mer 2020
         <div class="flex">
           <a
             href="https://vimeo.com/asterenmer"

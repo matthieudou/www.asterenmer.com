@@ -1,30 +1,28 @@
 <template>
   <div
-    class="bg-cover bg-center"
+    class="bg-cover bg-position"
     :style="{backgroundImage: `url(${require('~/assets/img/background.jpg')})`}">
     <div class="bg-blue-royal bg-opacity-50">
       <div class="max-w-screen-xl mx-auto px-container pt-20 pb-64 ">
-        <div class="grid grid-cols-3">
-          <div class="text-white text-lg col-span-2 col-start-2">
-            <h2 class="font-heading tracking-heading uppercase text-4xl">
-              À propos
-            </h2>
-            <p class="mt-4">
-              Aster en mer est un projet de passion mêlant la voile, le partage, les images et la vie.
-            </p>
+        <h2 class="text-center text-white font-heading tracking-heading uppercase text-4xl">
+          À propos
+        </h2>
+        <div class="max-w-2xl mx-auto text-white text-lg text-justify leading-7 text-shadow">
+          <p class="mt-8">
+            Aster en mer est un projet de passion mêlant la voile, le partage, les images et la vie.
+          </p>
 
-            <p class="mt-4">
-              À travers toutes les épreuves que ses équipiers ont pu traverser pour entretenir ce voilier, Aster, robuste Moody de 12m, s’offre maintenant de beaux et longs étés à l’eau collectionnant les milles nautiques entre la Bretagne et la Vendée.
-            </p>
+          <p class="mt-6">
+            À travers toutes les épreuves que ses équipiers ont pu traverser pour entretenir ce voilier, Aster, robuste Moody de 12m, s’offre maintenant de beaux et longs étés à l’eau collectionnant les milles nautiques entre la Bretagne et la Vendée.
+          </p>
 
-            <p class="mt-4">
-              Nous sommes heureux de naviguer et de partager les aventures d’Aster sur ce site ou sur Instagram. Ce projet de rencontre accueille, chaque année, toujours plus de passionnés ou curieux à bord pour un partage d’un soir, d’une semaine ou d’une vie.
-            </p>
+          <p class="mt-6">
+            Nous sommes heureux de naviguer et de partager les aventures d’Aster sur ce site ou sur Instagram. Ce projet de rencontre accueille, chaque année, toujours plus de passionnés ou curieux à bord pour un partage d’un soir, d’une semaine ou d’une vie.
+          </p>
 
-            <p class="mt-4">
-              À bientôt sur l’eau!
-            </p>
-          </div>
+          <p class="mt-6">
+            À bientôt sur l’eau!
+          </p>
         </div>
       </div>
 
@@ -59,3 +57,19 @@
     }
   }
 </script>
+
+<style scoped>
+  .text-shadow {
+    text-shadow: 2px 3px 5px rgba(19, 42, 81, 0.2);
+  }
+
+  .bg-position {
+    background-position: -100px bottom;
+  }
+
+  @screen sm {
+    .bg-position {
+      @apply bg-left-bottom;
+    }
+  }
+</style>
