@@ -20,7 +20,19 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Aster en mer est un projet de passion mêlant la voile, le partage, les images et la vie.' }
+      { hid: 'description', name: 'description', content: 'Aster en mer est un projet de passion mêlant la voile, le partage, les images et la vie.' },
+
+      { hid: 'og:url', property: 'og:url', content: 'https://www.asterenmer.com' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:title', property: 'og:title', content: 'Aster en mer' },
+      { hid: 'og:description', property: 'og:description', content: 'Aster en mer est un projet de passion mêlant la voile, le partage, les images et la vie.' },
+      { hid: 'og:image', property: 'og:image', content: '/share-image.jpg' },
+
+      { hid: 'twitter:card', property: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'twitter:url', property: 'twitter:url', content: 'https://www.asterenmer.com' },
+      { hid: 'twitter:title', property: 'twitter:title', content: 'Aster en mer' },
+      { hid: 'twitter:description', property: 'twitter:description', content: 'Aster en mer est un projet de passion mêlant la voile, le partage, les images et la vie.' },
+      { hid: 'twitter:image', property: 'twitter:image', content: '/share-image.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/png', href: '/favicon.png' }
