@@ -3,7 +3,7 @@
     id="contact"
     class="bg-blue-royal pt-20 text-white">
     <div class="max-w-screen-xl px-container mx-auto">
-      <h2 class="font-heading tracking-heading uppercase text-4xl text-center">
+      <h2 class="font-heading tracking-heading uppercase text-4xl md:text-5xl text-center">
         Contact
       </h2>
 

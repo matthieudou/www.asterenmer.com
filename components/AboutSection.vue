@@ -4,12 +4,12 @@
     class="bg-cover bg-position"
     :style="{backgroundImage: `url(${require('~/assets/img/background.jpg')})`}">
     <div class="bg-blue-royal bg-opacity-50">
-      <div class="max-w-screen-xl mx-auto px-container pt-20 pb-64 ">
-        <h2 class="text-center text-white font-heading tracking-heading uppercase text-4xl">
+      <div class="max-w-screen-xl mx-auto px-container pt-20 pb-56 ">
+        <h2 class="text-center text-white font-heading tracking-heading uppercase text-4xl md:text-5xl">
           À propos
         </h2>
         <div class="max-w-2xl mx-auto text-white text-lg text-justify leading-7 text-shadow">
-          <p class="mt-8">
+          <p class="mt-20">
             Aster en mer est un projet de passion mêlant la voile, le partage, les images et la vie.
           </p>
 

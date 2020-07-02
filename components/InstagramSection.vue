@@ -1,7 +1,7 @@
 <template>
   <div id="galerie">
     <div class="max-w-screen-md mx-auto px-container py-20">
-      <h2 class="text-blue-royal font-heading tracking-heading uppercase text-4xl text-center">
+      <h2 class="text-blue-royal font-heading tracking-heading uppercase text-4xl md:text-5xl text-center">
         Galerie
       </h2>
 

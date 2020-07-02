@@ -23,7 +23,7 @@
       <div class="flex-1 flex items-center justify-center">
         <div class="px-container">
           <h1 class="text-center font-heading text-white text-heading uppercase">
-            <div class="flex items-center justify-center md:justify-between">
+            <div class="flex items-center justify-center md:justify-between leading-none">
               <span
                 v-for="(letter, i) in 'Aster'"
                 :key="i"
