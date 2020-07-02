@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.11.0",
+    "intersection-observer": "^0.11.0",
     "nuxt": "^2.13.0",
     "v-lazy-image": "^1.4.0",
     "vue-mq": "^1.0.1",

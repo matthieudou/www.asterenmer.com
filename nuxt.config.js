@@ -49,7 +49,8 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
-    '~/plugins/mq'
+    '~/plugins/mq',
+    '~/plugins/intersection-observer.client'
   ],
   /*
   ** Auto import components
