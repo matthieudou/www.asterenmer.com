@@ -27,7 +27,7 @@
               <span
                 v-for="(letter, i) in 'Aster'"
                 :key="i"
-                class="header-animation transition-all duration-150 ease-in-out transform mx-1 md:mx-0"
+                class="header-animation transition-all duration-150 ease-in-out transform mx-2 md:mx-0"
                 :class="loaded ? '' : 'opacity-0 translate-y-5'"
                 :style="{transitionDelay: i*(i+30) + 300 + 'ms'}">
                 {{ letter }}
@@ -37,7 +37,7 @@
           <h2 class="text-center font-heading text-white text-2xl md:text-3xl tracking-heading uppercase">
             Bienvenue à bord
           </h2>
-          <div class="mt-12 max-w-sm mx-auto flex justify-between">
+          <div class="mt-16 max-w-md mx-auto flex justify-between md:text-xl">
             <a
               v-scroll-to="'#a-propos'"
               href="/#a-propos"
