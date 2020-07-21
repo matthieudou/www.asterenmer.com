@@ -72,6 +72,8 @@
   import InstagramIcon from '~/assets/img/svg/instagram.svg'
 
   export default {
+    fetchOnServer: false,
+
     async fetch () {
       const params = { user_id: 8738828221, first: 9 }
       const res = await this.$axios.$get('https://instagram-feed.matthieudou.workers.dev/', { params })
