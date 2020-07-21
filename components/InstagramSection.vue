@@ -6,6 +6,13 @@
       </h2>
 
       <div class="mt-12 grid grid-cols-3 gap-1 sm:gap-2 md:gap-4">
+        <template v-if="$fetchState.pending">
+          <div
+            v-for="i in 9"
+            :key="i"
+            class="pb-full bg-blue-royal bg-opacity-25"
+            :style="{filter: 'blur(4px)'}" />
+        </template>
         <a
           v-for="({node}) in posts"
           :key="node.id"
@@ -65,10 +72,16 @@
   import InstagramIcon from '~/assets/img/svg/instagram.svg'
 
   export default {
-    props: {
-      posts: {
-        type: Array,
-        default: () => []
+    async fetch () {
+      const params = { user_id: 8738828221, first: 9 }
+      const res = await this.$axios.$get('https://instagram-feed.matthieudou.workers.dev/', { params })
+      const response = res.data.user.edge_owner_to_timeline_media
+      this.posts.push(...response.edges)
+    },
+
+    data () {
+      return {
+        posts: []
       }
     },
 
@@ -81,3 +94,15 @@
     }
   }
 </script>
+
+<style scoped>
+  .v-lazy-image {
+    filter: blur(4px);
+    @apply bg-blue-royal bg-opacity-25;
+    @apply transition duration-150 ease-in
+  }
+
+  .v-lazy-image-loaded {
+    filter: blur(0);
+  }
+</style>
