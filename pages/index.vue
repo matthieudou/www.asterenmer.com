@@ -5,9 +5,7 @@
     </header>
     <main>
       <about-section />
-      <client-only>
-        <instagram-section />
-      </client-only>
+      <instagram-section />
       <contact-section />
     </main>
   </div>
