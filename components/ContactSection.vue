@@ -57,7 +57,7 @@
       </div>
 
       <div class="p-4 border-t border-white text-sm flex justify-between items-center">
-        Aster en mer 2020
+        Aster en mer 2021
         <div class="flex">
           <a
             href="https://vimeo.com/asterenmer"
