@@ -37,7 +37,7 @@
           <h2 class="text-center font-heading text-white text-2xl md:text-3xl tracking-heading uppercase">
             Bienvenue à bord
           </h2>
-          <div class="mt-16 max-w-md mx-auto flex justify-between md:text-xl">
+          <div class="mt-16 max-w-xs mx-auto flex justify-between md:text-xl">
             <a
               v-scroll-to="'#a-propos'"
               href="/#a-propos"
@@ -45,13 +45,13 @@
               replace>
               À propos
             </a>
-            <a
+            <!-- <a
               v-scroll-to="'#galerie'"
               href="/#galerie"
               class="text-white px-4 py-2 border border-white rounded-full hover:bg-white hover:text-blue-royal transition duration-150 ease-in-out focus:bg-white focus:text-blue-royal focus:outline-none"
               replace>
               Galerie
-            </a>
+            </a> -->
             <a
               v-scroll-to="'#contact'"
               href="/#contact"
