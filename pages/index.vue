@@ -5,7 +5,7 @@
     </header>
     <main>
       <about-section />
-      <instagram-section />
+      <!-- <instagram-section /> -->
       <contact-section />
     </main>
   </div>
